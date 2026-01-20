@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us – Nawab Fragrances</title>
+    <link rel="icon" type="image/x-icon" href="/assets/Title.png">
+    <meta name="description"
+        content="Learn about Nawab Fragrances' journey, our founder Fahad, and our commitment to sustainable, high-quality, and innovative fragrances.">
+    <meta property="og:title" content="Our Story – Nawab Fragrances">
+    <meta property="og:description"
+        content="Crafting luxury fragrances since 2021, blending tradition with innovation.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1627914619391-4566c303f26f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://www.nawabfragrances.pk/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+
+<body>
+    <div class="free-delivery-banner">
+        <div class="marquee">
+            <p><i class="fas fa-truck"></i> Free Home Delivery across Pakistan — Fast &amp; Secure &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-truck"></i> Free Home Delivery across
+                Pakistan — Fast &amp; Secure &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i
+                    class="fas fa-truck"></i> Free Home Delivery across Pakistan — Fast &amp; Secure &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-truck"></i> Free Home Delivery
+                across Pakistan — Fast &amp; Secure</p>
+        </div>
+    </div>
+
+    <!-- Header (Global) -->
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid main-content">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">Nawab Fragrances</a>
+            <div class="collapse navbar-collapse justify-content-end ms-lg-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/shop.html" id="shopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="/shop.html">View All</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/premium.html">Premium</a></li>
+                            <li><a class="dropdown-item" href="/men.html">Men</a></li>
+                            <li><a class="dropdown-item" href="/women.html">Women</a></li>
+                            <li><a class="dropdown-item" href="/unisex.html">Unisex</a></li>
+                            <li><a class="dropdown-item" href="/oud.html">Oud</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center ms-auto ms-lg-4 desktop-cart-icon">
+                <div class="cart-icon-container" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2 class="mb-0">Your Cart</h2>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically loaded here by JS -->
+        </div>
+        <div class="cart-summary">
+            <div class="subtotal mb-3">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">Rs. 0</span>
+            </div>
+            <div class="cart-actions">
+                <a href="/checkout.html" class="btn btn-gold mb-3 w-100">Checkout (COD Only)</a>
+                <button class="btn btn-outline-gold w-100" id="continueShoppingBtn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- About Hero Banner -->
+        <section class="hero-section">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade hero-section">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/NEW.jpeg" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/NEW1.png" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/NEW2.png" class="d-block w-100" alt="..." loading="lazy">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Informative Section 1 -->
+        <section class="info-section">
+            <div class="container-fluid main-content">
+                <div class="row align-items-center flex-column-reverse flex-md-row">
+                    <div class="col-md-6 text-md-start">
+                        <h2 class="mb-4">Our Philosophy</h2>
+                        <p>At Nawab Fragrances, we blend tradition with innovation. Each fragrance is handcrafted using
+                            premium essential oils and aged to perfection. Explore our signature collections and find
+                            your signature scent.</p>
+                        <p>We are dedicated to crafting luxury fragrances that tell a story, evoke emotions, and leave a
+                            lasting impression. Experience the art of perfumery with us, where every bottle holds a
+                            piece of our passion and expertise.</p>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-md-0 text-center">
+                        <img src="assets/Home-Page.png" alt="Elegant perfume bottle" class="img-fluid rounded shadow-lg"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Two-Column History Section -->
+        <section class="history-section">
+            <div class="container-fluid main-content">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <h2 class="mb-4">Our Journey Through Scent</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>2021: Brand Founded</h5>
+                                <p class="text-light-gray">Nawab Fragrances was born from a passion for exquisite aromas
+                                    and a vision to blend traditional craftsmanship with modern elegance.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>2022: First Best-Seller Launched</h5>
+                                <p class="text-light-gray">"Rose Vintage" quickly became a customer favorite,
+                                    establishing our reputation for quality and sophistication across the region.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>2023: Expanded to International Markets</h5>
+                                <p class="text-light-gray">Our unique fragrances began reaching connoisseurs globally,
+                                    spreading the Nawab Fragrances experience far and wide, affirming our international
+                                    appeal.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>2024: Awarded "Best Niche Perfume"</h5>
+                                <p class="text-light-gray">Recognized by industry experts for our innovative blends and
+                                    unwavering commitment to exceptional quality, a true testament to our dedication.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>2025: Expanded Internationally</h5>
+                                <p class="text-light-gray">Entered new international markets and opened our first
+                                    flagship boutique, strengthening our global presence while continuing to innovate
+                                    with exclusive, handcrafted fragrances.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <p class="lead text-light-gray">Founded by master perfumer Fahad Khan Sherwani, Nawab Fragrances
+                            embarked on a mission to redefine luxury fragrances. Fahad's deep understanding of raw
+                            materials and his artistic flair led to the creation of scents that are not just perfumes,
+                            but experiences. From the carefully sourced rare oud to the delicate extraction of floral
+                            essences, every step in our process is a testament to our unwavering commitment to quality
+                            and artistry. We believe that a fragrance should be an extension of one's personality, a
+                            silent statement of elegance and individuality.</p>
+                        <p class="text-light-gray">Our dedication extends beyond the bottle. We are committed to ethical
+                            sourcing, sustainable practices, and creating products that are both kind to the planet and
+                            luxurious for our customers. Join us on this aromatic journey and discover the essence of
+                            timeless beauty, handcrafted with passion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Founder -->
+        <section class="founder-section">
+            <div class="container-fluid main-content">
+                <!-- <img src="https://via.placeholder.com/220/D4AF37/000000?text=Amina+Ali" alt="Ali, Founder of Nawab Fragrances" class="img-fluid mb-4" loading="lazy"> -->
+                <h3 class="text-gold">Fahad Khan Sherwani</h3>
+                <p class="title">Founder & Master Perfumer</p>
+                <p class="quote text-gold">"Fragrance is the art of memories, bottled."</p>
+                <p class="text-light-gray">Fahad, with his profound expertise in olfactory arts, established Nawab
+                    Fragrances with the vision of creating scents that resonate deeply. His passion for blending rare
+                    notes and creating unique compositions is at the heart of every Nawab Fragrances creation, ensuring
+                    each bottle is a masterpiece.</p>
+            </div>
+        </section>
+
+        <!-- Brand Values -->
+        <section class="brand-values-section">
+            <div class="container-fluid main-content text-center">
+                <h2 class=" mb-5">Our Core Values</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <i class="fas fa-leaf"></i>
+                        <h5 class="mt-3">Seasonal Scents</h5>
+                        <p>Discover lighter, fresh notes for spring/summer and richer, warmer scents for autumn/winter.
+                            Adapt your fragrance to the season.</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <i class="fas fa-award"></i>
+                        <h5 class="mt-3">Quality</h5>
+                        <p>Utilizing only premium essential oils and crafting in small batches to ensure unparalleled
+                            excellence in every bottle, guaranteeing a luxurious experience.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-lightbulb"></i>
+                        <h5 class="mt-3">Innovation</h5>
+                        <p>Continuously exploring new scent profiles and modern takes on classic fragrances, pushing the
+                            boundaries of perfumery to offer unique olfactory journeys.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Global) -->
+    <footer>
+        <div class="container-fluid main-content">
+            <div class="row">
+                <div class="col-md-4 footer-col mb-5 mb-md-0">
+                    <h5>About Nawab's</h5>
+                    <p>At Nawab's, we craft luxury fragrances using premium ingredients, blending tradition with modern
+                        artistry.</p>
+                    <p>Discover timeless scents that elevate your presence and leave a lasting impression.</p>
+                </div>
+                <div class="col-md-4 footer-col mb-5 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/shop.html">Shop</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h5>Connect</h5>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@nawabfragrances" target="_blank" aria-label="Tiktok"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright-text">
+                    <p>&copy; 2025 Nawab Fragrances. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923334964567" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

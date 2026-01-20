@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ – Nawab Fragrances</title>
+    <link rel="icon" type="image/x-icon" href="/assets/Title.png">
+    <meta name="description"
+        content="Find answers to frequently asked questions about Nawab Fragrances, including COD orders, shipping, returns, and more.">
+    <meta property="og:title" content="Frequently Asked Questions – Nawab Fragrances">
+    <meta property="og:description"
+        content="Quick answers to common questions about our products, ordering process, and policies.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1627914619391-4566c303f26f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://www.nawabfragrances.pk/faq.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+
+<body>
+<body>
+    <div class="free-delivery-banner">
+        <div class="marquee"><p><i class="fas fa-truck"></i> Free Home Delivery across Pakistan — Fast &amp; Secure   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fas fa-truck"></i> Free Home Delivery across Pakistan — Fast &amp; Secure   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-truck"></i> Free Home Delivery across Pakistan — Fast &amp; Secure   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-truck"></i> Free Home Delivery across Pakistan — Fast &amp; Secure</p></div>
+    </div>
+
+    <!-- Header (Global) -->
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid main-content">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">Nawab Fragrances</a>
+            <div class="collapse navbar-collapse justify-content-end ms-lg-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/shop.html" id="shopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="/shop.html">View All</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                                  <li><a class="dropdown-item" href="/premium.html">Premium</a></li>
+                            <li><a class="dropdown-item" href="/men.html">Men</a></li>
+                            <li><a class="dropdown-item" href="/women.html">Women</a></li>
+                            <li><a class="dropdown-item" href="/unisex.html">Unisex</a></li>
+                            <li><a class="dropdown-item" href="/oud.html">Oud</a></li>
+                      
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center ms-auto ms-lg-4 desktop-cart-icon">
+                <div class="cart-icon-container" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2 class="mb-0">Your Cart</h2>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically loaded here by JS -->
+        </div>
+        <div class="cart-summary">
+            <div class="subtotal mb-3">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">Rs. 0</span>
+            </div>
+            <div class="cart-actions">
+                <a href="/checkout.html" class="btn btn-gold mb-3 w-100">Checkout (COD Only)</a>
+                <button class="btn btn-outline-gold w-100" id="continueShoppingBtn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container-fluid main-content">
+                <h1 class="text-gold">Frequently Asked Questions</h1>
+                <div class="accordion accordion-flush mt-5" id="faqAccordion">
+                    <!-- Q1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                How do I place a COD order?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                To place a Cash on Delivery (COD) order, simply add your desired perfumes to the cart.
+                                Proceed to checkout, fill in your shipping details, and select "Cash on Delivery" as
+                                your payment method. You will pay the total amount in cash to the delivery agent when
+                                your package arrives. An SMS/email confirmation will be sent after your order is placed.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                What is your return policy?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We are pleased to accommodate returns and exchanges within 15 days. If 15 days have gone
+                                by since your purchase, we can’t offer a refund or exchange. To be eligible for a
+                                return, your item must not be used more than 10% of the total quantity and must not be
+                                damaged.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                How long does shipping take?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Orders are typically processed and shipped within 1-2 business days. Delivery times vary
+                                based on your location:
+                                <ul>
+                                    <li>Major Cities (Karachi, Lahore, Islamabad): 2-4 business days</li>
+                                    <li>Other Cities: 3-7 business days</li>
+                                </ul>
+                                You will receive an SMS/email with tracking details once your order has been dispatched.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Are you selling the real products?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We sell high‑quality impressions of designer fragrances. Our perfume oils use
+                                high‑quality ingredients to create a new inspired aroma that you will like.
+                                <br><br>
+                                Disclaimer: Nawab Perfumes competes with designer brands. It does not use their
+                                fragrances and is not associated in any way with the designer brands or their
+                                manufacturers. All trademarks are property of their respective owners. We comply with
+                                the Competition Commission of Pakistan’s Act and policies.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                How do I track my order?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Once your order is shipped, you will receive an SMS/email with a tracking number and a
+                                link to the courier's tracking page. You can use this number to monitor the status of
+                                your delivery.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                Which one smells better: the oil or the spray?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Both the oil and the spray are created with the same fragrance. Roll‑ons are
+                                concentrated perfume oils, so in theory they should smell the same. It comes down to
+                                your body chemistry and how each version smells on your skin.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                Do you use alcohol in your perfumes?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSeven" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sprays contain alcohol; roll‑ons are oil‑based fragrances (no alcohol).
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q8 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                What’s the best way to store perfumes?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingEight" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Keep perfume in a cool, dark place. Sunlight can cause chemical reactions that may
+                                change the scent, sillage, and projection.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q9 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                aria-controls="flush-collapseNine">
+                                Will my namaz be acceptable if I use this perfume (it contains alcohol)?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingNine" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Alcohol is not impure in itself and is used in medicines, perfumes, detergents, and
+                                other useful products. The ban in Islam is on the consumption (drinking) of liquor
+                                (khamr) resulting from fermentation. Non‑khamr alcohols may be used. Keeping this in
+                                mind, the use of perfumes due to alcohol content—regardless of concentration—is not
+                                prohibited, and namaz will be accepted.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Q10 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                aria-controls="flush-collapseTen">
+                                Do you require an advance payment for large orders?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTen" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes. For orders over Rs 10,000, we require an advance payment of half the order amount
+                                to ensure a smooth delivery process.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Global) -->
+    <footer>
+        <div class="container-fluid main-content">
+            <div class="row">
+                <div class="col-md-4 footer-col mb-5 mb-md-0">
+                    <h5>About Nawab Fragrances</h5>
+                    <p>At Nawab Fragrances, we craft luxury fragrances using premium ingredients, blending tradition
+                        with modern artistry.</p>
+                    <p>Discover timeless scents that elevate your presence and leave a lasting impression.</p>
+                </div>
+                <div class="col-md-4 footer-col mb-5 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/shop.html">Shop</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h5>Connect</h5>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/nawab.fragrances" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/nawabfragrances" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@nawabfragrances" target="_blank" aria-label="Tiktok"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright-text">
+                    <p>&copy; 2025 Nawab Fragrances. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923334964567" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
